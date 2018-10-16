@@ -1,0 +1,34 @@
+
+				Payment Wallet 	
+
+Test Case :
+
+Scenario 1: Create Account 
+	
+	Given pass Name and Mobile no and Amount
+	When We Enter Name and Mobile no and Amount are null
+	Then Fill All the deatils Properly. 
+	
+	Given pass Name and Mobile no and Amount
+	When We Enter Name and Mobile no and Amount are valid
+	Then Account created successfully
+	
+	
+	
+
+Scenario 2: Find Customer account details By Mobile no
+	
+	Given pass Mobile no
+	When We pass Mobile no is null
+	Then Mobile no can't be empty
+	
+	Given pass Mobile no
+	When We pass Mobile no is not exist
+	Then Account doesn't not exist with this mobile no.
+	
+	Given pass Mobile no
+	When We pass Mobile no is valid
+	Then Get Customer Details
+	
+	
+	
