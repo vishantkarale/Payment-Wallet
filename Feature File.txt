@@ -1,34 +1,31 @@
 
-				Payment Wallet 	
+					Payment Wallet 	
 
 Test Case :
 
 Scenario 1: Create Account 
 	
 	Given pass Name and Mobile no and Amount
-	When We Enter Name and Mobile no and Amount are null
+	When We Enter Name as " " and Mobileno as " " and Amount as null/empty
 	Then Fill All the deatils Properly. 
 	
 	Given pass Name and Mobile no and Amount
-	When We Enter Name and Mobile no and Amount are valid
-	Then Account created successfully
+	When We Enter Name as "Rohit" and Mobileno as "9988774455" and Amount as "5000"
+	Then Customer Account created successfully
 	
 	
 	
 
 Scenario 2: Find Customer account details By Mobile no
 	
-	Given pass Mobile no
-	When We pass Mobile no is null
+	Given pass Mobileno
+	When We pass Mobileno is null
 	Then Mobile no can't be empty
 	
-	Given pass Mobile no
-	When We pass Mobile no is not exist
+	Given pass Mobileno
+	When We pass Mobileno as "9988774451" but It is not exist
 	Then Account doesn't not exist with this mobile no.
 	
-	Given pass Mobile no
-	When We pass Mobile no is valid
+	Given pass Mobileno
+	When We pass Mobileno as "9988774455" is valid
 	Then Get Customer Details
-	
-	
-	
